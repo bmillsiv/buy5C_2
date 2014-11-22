@@ -1,0 +1,27 @@
+body {
+	padding-top: 70px;
+	background-color: #2ecc71;
+}
+
+/* ------------------------------------------------------------------------------------*/
+
+/*Home Page Stuff*/
+#homepage_header {
+	text-align: center;
+	color: #f1c40f;
+	padding-top: 100px; /*Fixme: responsive*/;
+}
+.homepage_h2 {
+	text-align: center;
+}
+.homepage_h2 a {
+	margin-left: auto;
+	color: #ecf0f1;
+}
+.homepage_h2 a:hover {
+	margin-left: auto;
+	color: #f1c40f;
+}
+
+
+/* ------------------------------------------------------------------------------------*/
