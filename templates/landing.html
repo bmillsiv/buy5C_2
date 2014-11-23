@@ -1,7 +1,24 @@
 {% extends 'header.html' %}
 
 {% block content %}
-	<h1 id = 'homepage_header'>The Marketplace of the Claremont Colleges</h1>
-	<h2 class = 'homepage_h2'><a href = '#'>Buy</a></h2>
-	<h2 class = 'homepage_h2'><a href = '#'>Sell</a></h2>
+<div class = 'container'>
+	<div class = 'row' id = 'homepage_banner'>
+		<div class = 'col-md-12'>
+			<ul class = "list-unstyled list-inline">
+				<li><h1>The 5C Marketplace</h1></li>
+				<li><h2><a href = '#'>Buy</a></h2></li>
+				<li><h2><a href = '#'>Sell</a></h2></li>
+		</div>
+	<div class = 'row' id = 'homepage_search'>
+		<div class = 'col-md-12'>
+			<form role="search">
+        		<div class="form-group">
+          			<input type="text" placeholder="What would you like to buy? Press enter to search">
+        		</div>
+
+      		</form>
+		</div>
+	</div>
+</div>
+
 {% endblock %}

@@ -1,27 +1,37 @@
 body {
-	padding-top: 70px;
-	background-color: #2ecc71;
+/*	background-image: url('../img/pomona.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	background-color: #8e44ad;
 }
 
 /* ------------------------------------------------------------------------------------*/
 
 /*Home Page Stuff*/
-#homepage_header {
-	text-align: center;
-	color: #f1c40f;
-	padding-top: 100px; /*Fixme: responsive*/;
+#homepage_banner {
+/*	background-color: #ff0;*/
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	margin-top: 15%;
 }
-.homepage_h2 {
-	text-align: center;
+#homepage_banner h1, #homepage_banner h2 a{
+	font-weight: 300;
+	color: #000;
+	line-height: 40px;
 }
-.homepage_h2 a {
-	margin-left: auto;
-	color: #ecf0f1;
+#homepage_banner li {
+	margin-right: 50px;
 }
-.homepage_h2 a:hover {
-	margin-left: auto;
-	color: #f1c40f;
+
+#homepage_search input {
+	height: 43px;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 300px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+
+
 
 
 /* ------------------------------------------------------------------------------------*/
