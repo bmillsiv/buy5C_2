@@ -1,9 +1,15 @@
 <!doctype html>
+
+<!-- Header + Footer html file-->
+<!-- We're ging to have multiple header1 header2 html files if we are going to want a page with a header sans footer etc. It seems we can't extend twice and so have to make unique generic extend files -->
+
 <html>
 <head>
 	<title>Buy5C mothafuckas!</title>
 	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/myStys.css">
+	<link href="/static/css/sticky-footer.css" rel="stylesheet">
+
 </head>
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -16,7 +22,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#">Buy5C</a>
+	      <a class="navbar-brand" href="/">Buy5C</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,16 +33,15 @@
 	        <li><a href="#">Feedback</a></li>
 	      </ul>
 
-
 	      <!--Search-->
-<!-- 	      <form class="navbar-form navbar-left" role="search">
+			<!-- <form class="navbar-form navbar-left" role="search">
 	        <div class="form-group">
 	          <input type="text" class="form-control" placeholder="Search">
 	        </div>
 	        <button type="submit" class="btn btn-default">Submit</button>
 	      </form> -->
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#">Login</a></li>
+	        <li><a href="/login">Login</a></li>
 	        <li><a href="#">Signup</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
@@ -48,4 +53,11 @@
 	{% endblock %}
 
 </body>
+
+<footer class="footer">
+	<div class="container">
+		<p class="text-muted">Contact Billy, Hugo and Hugh if and when you wanna snuggle.</p>
+	</div>
+</footer>
+
 </html>
