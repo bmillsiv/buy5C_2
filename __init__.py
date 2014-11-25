@@ -5,5 +5,7 @@ app = Flask(__name__)
 def home_page():
 	return render_template('landing.html')
 
+#practicing git merge
+
 if __name__ == '__main__':
 	app.run()
