@@ -5,7 +5,11 @@ app = Flask(__name__)
 def home_page():
 	return render_template('landing.html')
 
-#practicing git merge
+@app.route('/login')
+def login_page():
+	return render_template('login.html')
+
+#practicing git merge - It worked! Boo ya!
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
