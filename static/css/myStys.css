@@ -33,8 +33,25 @@ body {
 }
 
 #bkgImg {
-   	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
+	/*This is one of my photos used as a placeholder if needing an image*/
+	/* fallback */
+	background-color: #1a82f7;
+	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
 	background-size: cover;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#1a82f7), to(#2F2727));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(bottom, #2F2727, #1a82f7);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(bottom, #2F2727, #1a82f7);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(bottom, #2F2727, #1a82f7);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(bottom, #2F2727, #1a82f7);
 }
 /* ------------------------------------------------------------------------------------*/
 
