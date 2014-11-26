@@ -3,15 +3,19 @@
 <!-- Header + Footer html file-->
 <!-- We're ging to have multiple header1 header2 html files if we are going to want a page with a header sans footer etc. It seems we can't extend twice and so have to make unique generic extend files -->
 
-<html>
+<html lang="en">
 <head>
 	<title>Buy5C mothafuckas!</title>
+
+	<meta name="description" content="Buy5c - A marketplace for the Claremont Colleges">
+	<meta charset="utf-8">
+
 	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/myStys.css">
 	<link href="/static/css/sticky-footer.css" rel="stylesheet">
 
 </head>
-<body>
+<body id="bkgImg">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -43,7 +47,7 @@
 	      </form> -->
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><a href="/login">Login</a></li>
-	        <li><a href="#">Signup</a></li>
+	        <li><a href="/signup">Signup</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->

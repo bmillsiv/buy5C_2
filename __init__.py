@@ -13,6 +13,10 @@ def login_page():
 def browse_page():
 	return render_template('browse.html')
 
+@app.route('/signup')
+def signup_page():
+	return render_template('signup.html')
+
 #practicing git merge - It worked! Boo ya!
 
 if __name__ == '__main__':

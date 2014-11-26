@@ -2,32 +2,23 @@
 
 {% block content %}
 <!-- Add css/js for functionality: http://bootsnipp.com/snippets/featured/login-form-with-css-3d-transforms -->
-<div class="container">
-	<div class="row">
-    	<div class="container" id="formContainer">
-
-          <form class="form-signin" id="login" role="form">
-            <h3 class="form-signin-heading">Please sign in</h3>
-            <a href="#" id="flipToRecover" class="flipLink">
-              <div id="triangle-topright"></div>
-            </a>
-            <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Email address" required autofocus>
-            <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Password" required>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-          </form>
-    
-          <form class="form-signin" id="recover" role="form">
-            <h3 class="form-signin-heading">Enter email address</h3>
-            <a href="#" id="flipToLogin" class="flipLink">
-              <div id="triangle-topleft"></div>
-            </a>
-            <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Email address" required autofocus>
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Recover password</button>
-          </form>
-
-        </div> <!-- /container -->
-	</div>
-</div>
+<!-- <div id="big-form" class="well auth-box"> -->
+<!-- <div id="cornersForms"> -->
+<div class="container" id="formContainer">
+  <form class="form-signin" role="form">
+    <h2 class="form-signin-heading">Please sign in</h2>
+    <label for="inputEmail" class="sr-only">Email address</label>
+    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  </form>
+</div> <!-- /container -->
 
 {% endblock %}
 

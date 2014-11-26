@@ -30,5 +30,23 @@ body {
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 	width:100%;
 	background-image:none; /*Disable blue box on click */
+}
+
+#bkgImg {
+   	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+/* ------------------------------------------------------------------------------------*/
+
+/*background container for login page - rounding corners + bkg-color + outline-color*/
+/*cool site for this: http://www.cssmatic.com/border-radius*/
+#formContainer {
+	margin-top: 200px;
+	background-color: orange;
+	border-radius: 35px 15px 35px 15px;
+	-moz-border-radius: 35px 15px 35px 15px;
+	-webkit-border-radius: 35px 15px 35px 15px;
+	border: 0px solid #000000;
+}
 
 /* ------------------------------------------------------------------------------------*/
