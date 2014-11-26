@@ -9,9 +9,9 @@ def home_page():
 def login_page():
 	return render_template('login.html')
 
-@app.route('/footer')
-def footer_page():
-	return render_template('footer.html')
+@app.route('/browse')
+def browse_page():
+	return render_template('browse.html')
 
 #practicing git merge - It worked! Boo ya!
 
