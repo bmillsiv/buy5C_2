@@ -1,19 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <!-- Header + Footer html file-->
 <!-- We're ging to have multiple header1 header2 html files if we are going to want a page with a header sans footer etc. It seems we can't extend twice and so have to make unique generic extend files 
 http://jinja.pocoo.org/docs/dev/templates/-->
+<!-- Added Bootstrap recommended starter code with JQuery script added to head. Check out documentation here: http://getbootstrap.com/getting-started/-->
 
 <html lang="en">
 <head>
-	<title>Buy5C mothafuckas!</title>
-
-	<meta name="description" content="Buy5c - A marketplace for the Claremont Colleges">
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Buy5c - A marketplace for the Claremont Colleges">
+	<meta name="author" content="Billy, Hugo and Hugh">
+
+	<title>Buy5C mothafuckas!</title>
 
 	<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/static/css/myStys.css">
-	<link href="/static/css/sticky-footer.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/css/sticky-footer.css">
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 <body id="bkgImg">
@@ -28,6 +38,7 @@ http://jinja.pocoo.org/docs/dev/templates/-->
 	        <span class="icon-bar"></span>
 	      </button>
 	      <a class="navbar-brand" href="/">Buy5C</a>
+	      <!-- Search bootstrap for brand image if want to replace here -->
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,6 +69,11 @@ http://jinja.pocoo.org/docs/dev/templates/-->
 
 	{% endblock %}
 
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<!-- To maximize load speed, place script tags at bottom of code-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/myJS.js"></script>
 </body>
 
 </html>
