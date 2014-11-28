@@ -5,6 +5,29 @@ body {
 	background-color: #8e44ad;
 }
 
+.bkgImg {
+	/*This is one of my photos used as a placeholder if needing an image*/
+	/* fallback */
+	background-color: #1a82f7;
+	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
+	background-size: cover;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#1a82f7), to(#000000));
+
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(bottom, #000000, #1a82f7);
+
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(bottom, #000000, #1a82f7);
+
+	/* IE 10 */
+	background: -ms-linear-gradient(bottom, #000000, #1a82f7);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(bottom, #000000, #1a82f7);
+}
+
+
 /* ------------------------------------------------------------------------------------*/
 
 /*Home Page Stuff*/
@@ -32,27 +55,6 @@ body {
 	background-image:none; /*Disable blue box on click */
 }
 
-#bkgImg {
-	/*This is one of my photos used as a placeholder if needing an image*/
-	/* fallback */
-	background-color: #1a82f7;
-	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
-	background-size: cover;
-	/* Safari 4-5, Chrome 1-9 */
-	background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#1a82f7), to(#000000));
-
-	/* Safari 5.1, Chrome 10+ */
-	background: -webkit-linear-gradient(bottom, #000000, #1a82f7);
-
-	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(bottom, #000000, #1a82f7);
-
-	/* IE 10 */
-	background: -ms-linear-gradient(bottom, #000000, #1a82f7);
-
-	/* Opera 11.10+ */
-	background: -o-linear-gradient(bottom, #000000, #1a82f7);
-}
 /* ------------------------------------------------------------------------------------*/
 
 /*background container for login page - rounding corners + bkg-color + outline-color*/
@@ -68,12 +70,24 @@ body {
 
 /* ------------------------------------------------------------------------------------*/
 
-/*Side Nav*/
-.sideNavEdits {
-	margin-top: 200px;
+/*Side Nav: http://bootsnipp.com/snippets/featured/accordion-menu*/
+.sideNavMargins {
+	margin-top: 100px;
 	margin-left: 50px;
 }
+.panel-body table tr td { 
+	padding-left: 15px 
+}
+.glyphicon { 
+	margin-right:10px;
+}
+.panel-body { 
+	padding:0px; 
+}
+.panel-body .table {
+	margin-bottom: 0px; 
+}	
 
-
+/* ------------------------------------------------------------------------------------*/
 
 

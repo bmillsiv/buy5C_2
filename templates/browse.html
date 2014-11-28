@@ -4,6 +4,118 @@
 
 {% block content %}
 
-{% endblock %}
+<style type="text/css">
 
-{% include 'sideNav.html' %}
+</style>
+
+<div class="container sideNavMargins">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Category</a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Everything</td>
+                                </tr>
+                                <tr>
+                                    <td>Apparel, Accessories</td>
+                                </tr>
+                                <tr>
+                                    <td>Appliances</td>
+                                </tr>
+                                <tr>
+                                    <td>Books</td>
+                                </tr>
+                                <tr>
+                                    <td>Electronics</td>
+                                </tr>
+                                <tr>
+                                    <td>Furniture</td>
+                                </tr>
+                                <tr>
+                                    <td>Movies, Music, Games</td>
+                                </tr>
+                                <tr>
+                                    <td>Tickets</td>
+                                </tr>
+                                <tr>
+                                    <td>Other</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Sort</a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Date: Newest First</td>
+                                </tr>
+                                <tr>
+                                    <td>Price: Lowest First</td>
+                                </tr>
+                                <tr>
+                                    <td>Price: Highest First</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                        	<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Price</a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>Anything</td>
+                                </tr>
+                                <tr>
+                                    <td>&#60;$50</td>
+                                </tr>
+                                <tr>
+                                    <td>$50 - $75</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>&#62;$75</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <div class="well">
+                <h1>Hugh's todo for tomorrow:</h1>
+                <ul>
+                	<li>Work on grid layout for displaying results on this page. Browse browse browse time!</li>
+                	<li>Figure out how to make div span entire page even if content isn't there. Gradient bkg bug</li>
+                	<li>learn more about Bootstraps col-sd-# and col-md-# etc. to figure out how to make standalone bkg's for text</li>
+                    <li>learn about BS's prettify.js/css</li>
+                    <li>study more about JS and jQuery</li>
+                    <li>time to learn more about Flask and DB's - we're almost there!</li>
+            	</ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

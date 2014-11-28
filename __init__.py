@@ -21,7 +21,13 @@ def feedback_page():
 def signup_page():
 	return render_template('signup.html')
 
-#practicing git merge - It worked! Boo ya!
+@app.route('/sell')
+def sell_page():
+	return render_template('sell.html')
+
+@app.route('/test')
+def test_page():
+	return render_template('test.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
