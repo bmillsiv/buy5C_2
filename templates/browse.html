@@ -9,10 +9,10 @@
 <script>
     
 </script>
-
-
+<!-- http://getbootstrap.com/css/ -->
+<!-- Container > row > col must be immediate children to row's > -->
+<!-- col-sm-3 col-sm-offset-3 etc. || -push-* & -pull-* -->
 <div class="container sideNavMargins">
-    
     <div class="row">
         <div class="col-sm-3 col-md-3">
             <div class="panel-group" id="accordion">
@@ -20,7 +20,7 @@
                     <div class="panel-heading">
                         <h4 class="panel-title">
                             <!-- glyphicon glyphicon-chevron-right -->
-                            <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Category <span class="glyphicon glyphicon-chevron-left"></span></a>
+                            <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Category <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
                         </h4>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in">
@@ -60,7 +60,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Sort</a>
+                            <a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Sort<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
                         </h4>
                     </div>
                     <div id="collapseTwo" class="panel-collapse collapse">
@@ -82,7 +82,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        	<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Price</a>
+                        	<a class="accordian-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Price<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
                         </h4>
                     </div>
                     <div id="collapseThree" class="panel-collapse collapse">
@@ -107,18 +107,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-9 col-md-9">
-            <div class="well">
-                <h1>Hugh's todo for tomorrow:</h1>
-                <ul>
-                	<li>Work on grid layout for displaying results on this page. Browse browse browse time!</li>
-                	<li>Figure out how to make div span entire page even if content isn't there. Gradient bkg bug</li>
-                	<li>learn more about Bootstraps col-sd-# and col-md-# etc. to figure out how to make standalone bkg's for text</li>
-                    <li>learn about BS's prettify.js/css</li>
-                    <li>study more about JS and jQuery</li>
-                    <li>time to learn more about Flask and DB's - we're almost there!</li>
-            	</ul>
-            </div>
+        <!-- end side Nav -->
+        <!-- begin grid -->
+        <div class="col-md-9">
+            <h1>hello</h1>
         </div>
     </div>
 </div>

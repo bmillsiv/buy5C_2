@@ -2,7 +2,7 @@ body {
 /*	background-image: url('../img/pomona.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;*/
-	background-color: #8e44ad;
+	/*background-color: #8e44ad;*/
 }
 
 .bkgImg {
@@ -59,9 +59,8 @@ body {
   cool site for this: http://www.cssmatic.com/border-radius
 ------------------------------------------------------------------------------------*/
 
-
 #loginSignupContainer {
-	margin-top: 200px;
+	margin-top: 10%;
 	background-color: orange;
 	border-radius: 35px 15px 35px 15px;
 	-moz-border-radius: 35px 15px 35px 15px;
@@ -76,14 +75,14 @@ body {
 
 .sideNavMargins {
 	margin-top: 100px;
-	margin-left: 50px;
+	/*reminder: if you edit left marg without using BS's col-sm etc it won't resize correctly
+	for devices*/
+	/*margin-left: 50px;*/
 }
 .panel-body table tr td { 
 	padding-left: 15px 
 }
-.glyphicon { 
-	margin-right:10px;
-}
+
 .panel-body { 
 	padding:0px; 
 }
@@ -91,7 +90,7 @@ body {
 	margin-bottom: 0px; 
 }	
 
-/*
+/*Browse Html page
 ------------------------------------------------------------------------------------*/
 
 .panel-heading .accordion-toggle:after {
@@ -108,4 +107,10 @@ body {
 
 /*
 ------------------------------------------------------------------------------------*/
+
+
+
+
+
+
 
