@@ -28,9 +28,9 @@ body {
 }
 
 
-/* ------------------------------------------------------------------------------------*/
+/*Home Page Stuff
+------------------------------------------------------------------------------------*/
 
-/*Home Page Stuff*/
 #homepage_banner {
 /*	background-color: #ff0;*/
 	font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -55,22 +55,25 @@ body {
 	background-image:none; /*Disable blue box on click */
 }
 
-/* ------------------------------------------------------------------------------------*/
+/*background container for login page - rounding corners + bkg-color + outline-color
+  cool site for this: http://www.cssmatic.com/border-radius
+------------------------------------------------------------------------------------*/
 
-/*background container for login page - rounding corners + bkg-color + outline-color*/
-/*cool site for this: http://www.cssmatic.com/border-radius*/
-#formContainer {
+
+#loginSignupContainer {
 	margin-top: 200px;
 	background-color: orange;
 	border-radius: 35px 15px 35px 15px;
 	-moz-border-radius: 35px 15px 35px 15px;
 	-webkit-border-radius: 35px 15px 35px 15px;
 	border: 0px solid #000000;
+	/*Max-width adjusts for width size*/
+	max-width: 500px;
 }
 
-/* ------------------------------------------------------------------------------------*/
+/* Side Nav: http://bootsnipp.com/snippets/featured/accordion-menu
+------------------------------------------------------------------------------------*/
 
-/*Side Nav: http://bootsnipp.com/snippets/featured/accordion-menu*/
 .sideNavMargins {
 	margin-top: 100px;
 	margin-left: 50px;
@@ -88,6 +91,21 @@ body {
 	margin-bottom: 0px; 
 }	
 
-/* ------------------------------------------------------------------------------------*/
+/*
+------------------------------------------------------------------------------------*/
 
+.panel-heading .accordion-toggle:after {
+	font-family: 'Glyphicon Halflings';
+	content: '\e114';
+	float: right;
+	color: gray;
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: '\e080';    /* adjust as needed, taken from bootstrap.css */
+}
+
+/*
+------------------------------------------------------------------------------------*/
 
