@@ -1,3 +1,9 @@
+/*http://getbootstrap.com/javascript/
+http://startbootstrap.com/template-overviews/thumbnail-gallery/
+http://jinja.pocoo.org/docs/dev/templates/
+http://getbootstrap.com/components/#navbar-fixed-top
+*/
+
 body {
 /*	background-image: url('../img/pomona.jpg');
 	background-size: cover;
@@ -5,12 +11,21 @@ body {
 	/*background-color: #8e44ad;*/
 }
 
+.fill {
+	min-height: 100%;
+	height: 100%;
+}
+
 .bkgImg {
 	/*This is one of my photos used as a placeholder if needing an image*/
 	/* fallback */
 	background-color: #1a82f7;
 	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
-	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
 	/* Safari 4-5, Chrome 1-9 */
 	background: -webkit-gradient(linear, 0% 10%, 0% 100%, from(#1a82f7), to(#000000));
 
@@ -28,8 +43,17 @@ body {
 }
 
 
+
 /*Home Page Stuff
 ------------------------------------------------------------------------------------*/
+
+.full {
+	background: url("http://i.imgur.com/qsNgZwP.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
 
 #homepage_banner {
 /*	background-color: #ff0;*/
