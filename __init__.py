@@ -1,9 +1,12 @@
+#Hugh Berryman
+#hgberryman8@gmail.com
+
 from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-	return render_template('landing.html')
+	return render_template('index.html')
 
 @app.route('/login/')
 def login_page():
@@ -24,10 +27,6 @@ def signup_page():
 @app.route('/sell')
 def sell_page():
 	return render_template('sell.html')
-
-@app.route('/test')
-def test_page():
-	return render_template('test.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
